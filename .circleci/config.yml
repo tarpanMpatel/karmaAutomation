@@ -8,9 +8,8 @@ jobs:
       
     steps:
 
-      - checkout:
-          path: ~/karmaAutomation
-
+      - checkout
+          
       - restore_cache:
           key: karmaAutomation-{{ checksum "pom.xml" }}
       
