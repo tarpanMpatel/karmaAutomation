@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Register Test Suite" preserve-test-order="true" verbose="10" parallel="false" thread-count="1">
+
+	<!-- Put IP of localhost/Grid Hub machine -->
+	<parameter name="selenium.host" value="127.0.0.1" />
+
+	<!-- Put Port of localhost RC/Grid Hub machine -->
+	<parameter name="selenium.port" value="4723" />
+
+	<!-- Put target browser name as below: 1) Firefox : firefox 2) chrome : 
+		chrome 3) IExplorer : ie8 / ie9 -->
+	
+
+	<!-- @NOTE: 1) Un-comment <test> tag to run respective test. 2) Comment 
+		<test> tag to unrun respective test. -->
+		
+		
+		
+	<parameter name="appium.browser" value="browserstack" ></parameter> <!-- browserstack , local -->
+	
+	
+	
+	<!-- <listeners>
+		<listener class-name="com.Notepad.utility.CustomReporterEmailBuildSummary" />
+		<listener class-name="com.Notepad.utility.CustomReporterforEmail" />
+		<listener class-name="com.Notepad.utility.CustomReporterTestFailureDetails" />
+		<listener class-name="com.Notepad.utility.CustomReporterListener" />
+	</listeners> -->
+	
+	
+    <test name="TC_Reg_01_03_04_05 :: To Verify 'Register' functionality.">
+		<classes>
+			<class name="com.karma.register.index.RegisterIndex">
+				<methods>
+					<include name="verifyRegister" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	  
+	
+	  
+	</suite>
+	
