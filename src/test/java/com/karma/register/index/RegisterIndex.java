@@ -79,6 +79,7 @@ public class RegisterIndex extends AppiumInit {
 			numberOfFailure++;
 		}
 	
+		
 		if(numberOfFailure > 0){
 				Assert.assertTrue(false);
 			}
