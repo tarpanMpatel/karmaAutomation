@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/karmaAutomation
+    working_directory: karmaAutomation
     
     docker:
       - image: circleci/openjdk:8-jdk-stretch
